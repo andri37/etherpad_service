@@ -9,7 +9,7 @@ RUN wget "https://github.com/ether/etherpad-lite/archive/1.8.14.zip" &&\
 
 CMD cd etherpad-lite 
 	
-CMD src/bin/run.sh --root
+CMD ./src/bin/run.sh --root
 
 CMD node src/node/server.js
 
