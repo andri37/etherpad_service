@@ -9,6 +9,8 @@ services:
     image: andri37/etherpad:v21.01.01
     ports: 
       - 8080:9001
+    networks:
+      - ether_net
     # volumes: {}
 
   postgres-app:
@@ -22,11 +24,14 @@ services:
       PGDATA: /var/lib/postgresql/data/pgdata
     ports: 
       - 5432:5432
-    volumes: 
-      - database:/var/lib/postgresql/data
+    networks: 
+      - ether_net
+        #volumes: 
+        #- database:/var/lib/postgresql/data
 
-networks: {}
+networks: 
+  ether_net:
 
-volumes: 
-  database: 
-  etherdata: 
+volumes: {} 
+#  database: 
+#  etherdata: 
