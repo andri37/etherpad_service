@@ -13,4 +13,3 @@ CMD src/bin/run.sh --root
 
 CMD node src/node/server.js
 
-ENTRYPOINT ./build.sh v21.01.01
