@@ -5,8 +5,7 @@ RUN apt-get update && \
   apt-get clean
 
 RUN wget "https://github.com/ether/etherpad-lite/archive/1.8.14.zip" &&\
-  unzip etherpad-lite-1.8.14.zip &&\
-  mv etherpad-lite-1.8.14 etherpad-lite
+  unzip 1.8.14.zip 
 
 CMD cd etherpad-lite 
 	
