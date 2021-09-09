@@ -24,7 +24,9 @@ services:
       - 5555:8080
     volumes: 
       - database:/var/lib/postgresql/data
+
 networks: {}
+
 volumes: 
-  - database: {}
-  - etherdata: {}
+  database: 
+  etherdata: 
