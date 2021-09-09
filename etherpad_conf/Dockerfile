@@ -7,7 +7,7 @@ RUN apt-get update && \
 RUN wget "https://github.com/ether/etherpad-lite/archive/1.8.14.zip" &&\
   unzip 1.8.14.zip 
 
-CMD cd etherpad-lite 
+WORKDIR etherpad-lite-1.8.14
 	
 CMD ./src/bin/run.sh --root
 
