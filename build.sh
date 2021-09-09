@@ -6,4 +6,4 @@ if [ $# -eq 0 ]
     tag=$1
 fi
 
-docker build -t etherpad:$tag .
+docker build -t andri37/etherpad:$tag ./etherpad_conf
